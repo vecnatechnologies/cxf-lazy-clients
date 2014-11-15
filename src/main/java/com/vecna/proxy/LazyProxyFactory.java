@@ -52,7 +52,8 @@ public class LazyProxyFactory<T> implements InstanceFactory<T> {
    * Create a new {@link LazyProxyFactory}.
    *
    * @param factory the strategy for instantiating the target object.
-   * @param interfaces the interfaces the target object and the proxy implement.
+   * @param mainInterface main interface that the target object implements and the proxy intercepts.
+   * @param additionalInterfaces additional interfaces that the target object implements and the proxy intercepts.
    */
   public LazyProxyFactory(InstanceFactory<T> factory, Class<T> mainInterface, Class<?> ... additionalInterfaces) {
     if (factory == null) {
