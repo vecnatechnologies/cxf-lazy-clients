@@ -19,6 +19,8 @@ package com.vecna.proxy;
 /**
  * Yet another factory interface. Used by {@link LazyProxyFactory} to instantiate target objects.
  *
+ * @param <T> type (or supertype) of the object created.
+ *
  * @author ogolberg@vecna.com
  */
 public interface InstanceFactory<T> {

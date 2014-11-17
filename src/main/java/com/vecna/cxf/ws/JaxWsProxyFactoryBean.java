@@ -40,7 +40,7 @@ public class JaxWsProxyFactoryBean extends org.apache.cxf.jaxws.JaxWsProxyFactor
    * @return proxied, lazily initialized instance (if specified {@link #setLazy(boolean)})
    * or a fully initialized webservice client instance.
    */
-  @SuppressWarnings({"rawtypes", "unchecked"})
+  @SuppressWarnings({ "rawtypes", "unchecked" })
   @Override
   public synchronized Object create() {
     if (m_lazy) {

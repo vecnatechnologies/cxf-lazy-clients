@@ -37,6 +37,7 @@ import org.slf4j.LoggerFactory;
  *
  * Note that the generated proxy will incur an additional reflection call cost for every invocation of an interface method.
  *
+ * @param <T> specifies one of the proxied interfaces for convenience
  * @author ogolberg@vecna.com
  */
 public class LazyProxyFactory<T> implements InstanceFactory<T> {
